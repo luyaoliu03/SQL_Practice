@@ -1,3 +1,3 @@
 SELECT FirstName, LastName, City, State
-FROM Person A LEFT JOIN Address B
-ON A.PersonId = B.PersonId
+FROM Person a LEFT JOIN Address b
+ON a.PersonId = b.PersonId
