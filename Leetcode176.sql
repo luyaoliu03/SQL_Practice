@@ -1,10 +1,11 @@
 /* IFNULL function */
 
 SELECT IFNULL(
-(SELECT DISTINCT SALARY
-FROM Employee
-ORDER BY Salary Desc
-LIMIT 1,1), NULL)
+  (SELECT DISTINCT SALARY
+  FROM Employee
+  ORDER BY Salary DESC
+  LIMIT 1,1)
+, NULL)
 AS SecondHighestSalary
 ;
 
